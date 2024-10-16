@@ -105,13 +105,14 @@ class Atleta():
         else:
             print(f"O atleta {self.nome} não pode se aposentar, pois já é aposentado")
     def aquecer(self):
-        if self.aposentado == False and self.aquecido == False:
-            print(f"O atleta {self.nome} está aquecendo!")
-            self.aquecido = True
-        elif self.aquecido == True:
-            print(f"O atleta {self.nome} não vai aquecer, pois já está aquecido.")
+        if self.aposentado == False:
+            if self.aquecido == False:
+                print(f"O atleta {self.nome} está aquecendo!")
+                self.aquecido = True
+            else:
+                print(f"{self.nome} não vai aquecer, pois já está aquecido!")
         else:
-            print(f"O atleta {self.nome} está aposentado e não pode aquecer.")
+            print(f"{self.nome} não pode aquecer, pois está aposentado.")
 
     def desaposentar(self):
         if self.aposentado == True:
