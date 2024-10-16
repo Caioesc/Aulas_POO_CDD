@@ -164,6 +164,16 @@ class TriAtleta(Corredor, Nadador, Ciclista):
     def __init__(self, nome, peso):
         super().__init__(nome, peso)
 
+def gravar(nome):
+    with open("Nomes.txt", "a") as arquivo:
+        arquivo.write(f"{nome}\n")
+
+def mostrar():
+    with open("Nomes.txt", "r") as arq2:
+        conteudo = arq2.read()
+        print(conteudo)
+
+
 
 
 
