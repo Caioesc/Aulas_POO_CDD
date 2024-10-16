@@ -169,8 +169,8 @@ def gravar(nome):
         arquivo.write(f"{nome}\n")
 
 def mostrar():
-    with open("Nomes.txt", "r") as arq2:
-        conteudo = arq2.read()
+    with open("Nomes.txt", "r") as arq:
+        conteudo = arq.read()
         print(conteudo)
 
 

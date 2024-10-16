@@ -1,3 +1,4 @@
+from biblioteca import *
 """try:
     a = 4
     b = 0
@@ -5,7 +6,6 @@
     print(divisao)
 except ZeroDivisionError:
     print("Não é possível dividir por zero.")"""
-from biblioteca import gravar, mostrar
 
 """try:
     print(x)
@@ -46,4 +46,4 @@ while opcao != 3:
         print("Programa encerrado!")
         opcao = 3
     else:
-        print("Opção inválida!")
+        print("Opção inválida.")
